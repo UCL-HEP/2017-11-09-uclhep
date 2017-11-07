@@ -769,8 +769,8 @@ for command,long_name,minimum_version,paths in [
         ('EasyMercurial', None, (1, 3), None),
         ('pip', None, None, None),
         ('sqlite3', 'SQLite 3', None, None),
-        ('nosetests', 'Nose', (1, 0, 0), None),
-        ('ipython', 'IPython script', (1, 0), None),
+        ('nosetests', 'Nose', (0, 10, 4), None),
+        ('ipython', 'IPython script', (0, 13, 2), None),
         ('emacs', 'Emacs', None, None),
         ('xemacs', 'XEmacs', None, None),
         ('vim', 'Vim', None, None),
@@ -844,9 +844,6 @@ for package,name,long_name,minimum_version,and_dependencies in [
         ('zmq', 'pyzmq', 'PyZMQ', (2, 1, 4), None),
         ('IPython', None, 'IPython Python package',
          CHECKER['ipython'].minimum_version, [
-             'jinja',
-             'tornado',
-             'pyzmq',
              VirtualDependency(
                  name='virtual-browser-ipython',
                  long_name='IPython-compatible web browser',
